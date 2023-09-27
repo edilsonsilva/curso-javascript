@@ -52,5 +52,14 @@ btncalcular.onclick = function () {
     rsconvenio = txtsalario.value * (7.5 / 100);
   }
 
-  txtliquido.value = rsinss;
+  if (txtfilhos.value == 0) {
+    rsfilho = 0;
+  } else {
+    rsfilho = txtsalario.value * (5 / 100) * txtfilhos.value;
+  }
+
+  rsliquido = parseFloat(txtsalario.value) + rsfilho - (rsinss + rsconvenio);
+  txtliquido.value = rsliquido;
+  txtinss.value = rsinss;
+  txtconvenio.value = rsconvenio;
 };
