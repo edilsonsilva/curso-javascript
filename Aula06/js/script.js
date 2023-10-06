@@ -8,7 +8,7 @@ de repetição:
 */
 
 function while1() {
-  let init = 30;
+  let init = 0;
   while (init <= 20) {
     console.log(init);
     init++;

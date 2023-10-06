@@ -13,7 +13,7 @@ function gerarInputs() {
   form.setAttribute("id", "cadastro");
 
   var ninput = 0;
-  while (ninput < 15000) {
+  while (ninput < 20) {
     let caixa = document.createElement("input");
     //adicionar o atributo type
     caixa.setAttribute("type", "text");
@@ -26,7 +26,7 @@ function gerarInputs() {
     ninput++;
   }
   body.appendChild(form); //adicionar o formulário ao body
-  for (let inp = 0; inp < 15000; inp++) {
+  for (let inp = 0; inp < 20; inp++) {
     var estilo = document.getElementsByTagName("input")[inp].style;
     estilo.display = "block";
     estilo.width = "80%";
