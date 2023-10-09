@@ -17,7 +17,7 @@ function dataHora() {
   let relogio = `${tempo.getHours()} : ${tempo.getMinutes()} : ${tempo.getSeconds()}`;
   return tempo.toLocaleDateString() + " - " + relogio;
 }
-
+const h1 = document.createElement("h1");
 body.onload = function () {
   const h1 = document.createElement("h1");
   h1.innerHTML = dataHora();
@@ -45,4 +45,7 @@ foto.onmouseout = function () {
 };
 foto1.onmouseout = function () {
   opacidade1(foto1);
+};
+h1.onclick = function () {
+  opacidade05(document.getElementsByTagName("h1")[0]);
 };
